@@ -1,0 +1,61 @@
+# Python caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Virtual environments and local tooling
+.venv/
+venv/
+env/
+.env
+.env.*
+.python-version
+
+# Gradio/runtime state
+.gradio/
+flagged/
+
+# Generated outputs and release/export folders
+outputs/
+*.zip
+*.7z
+*.rar
+
+# Runtime logs
+*.log
+cloudflared_*stdout.log
+cloudflared_*stderr.log
+gradio_share_*stdout.log
+gradio_share_*stderr.log
+localhost_run_*stdout.log
+localhost_run_*stderr.log
+localtunnel_*stdout.log
+localtunnel_*stderr.log
+simple_share_*stdout.log
+simple_share_*stderr.log
+ssh_tunnel_*stdout.log
+ssh_tunnel_*stderr.log
+
+# Local documents and temporary render artifacts
+*.docx
+*.tmp
+*.bak
+~$*
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+
+# Model artifacts: keep the compact baseline, ignore other checkpoints by default
+models/*.pt
+models/*.pth
+models/*.ckpt
+!models/gradv_ru_kws_baseline.pt

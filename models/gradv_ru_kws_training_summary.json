@@ -1,0 +1,193 @@
+{
+  "name": "gradv_ru_kws_baseline",
+  "created_at": "2026-05-11T01:48:20.102478+00:00",
+  "seed": 2026,
+  "vocabulary": [
+    "да",
+    "нет",
+    "стоп",
+    "вперёд",
+    "назад",
+    "привет",
+    "включи",
+    "выключи"
+  ],
+  "sample_rate": 16000,
+  "duration_sec": 2.0,
+  "train_examples": 640,
+  "val_examples": 192,
+  "examples_per_class": 80,
+  "val_examples_per_class": 24,
+  "model_class": "GradvRuKwsBaseline",
+  "model_parameters": 63496,
+  "device_used_for_training": "cpu",
+  "epochs": 18,
+  "batch_size": 64,
+  "learning_rate": 0.001,
+  "weight_decay": 0.0001,
+  "augmentation": {
+    "gain_range": [
+      0.65,
+      1.2
+    ],
+    "time_shift_samples": [
+      -2400,
+      2400
+    ],
+    "noise_std_range": [
+      0.0,
+      0.045
+    ],
+    "random_smoothing": true,
+    "random_tanh_distortion": true,
+    "random_edge_silence_samples": [
+      0,
+      1200
+    ]
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 1.844592070579529,
+      "train_accuracy": 0.3109375,
+      "val_loss": 2.0778679052988687,
+      "val_accuracy": 0.125
+    },
+    {
+      "epoch": 2,
+      "train_loss": 1.6498963713645936,
+      "train_accuracy": 0.6125,
+      "val_loss": 2.0576230684916177,
+      "val_accuracy": 0.15104166666666666
+    },
+    {
+      "epoch": 3,
+      "train_loss": 1.5125051736831665,
+      "train_accuracy": 0.70625,
+      "val_loss": 2.0026811758677163,
+      "val_accuracy": 0.3489583333333333
+    },
+    {
+      "epoch": 4,
+      "train_loss": 1.3723108053207398,
+      "train_accuracy": 0.7828125,
+      "val_loss": 1.793189525604248,
+      "val_accuracy": 0.3020833333333333
+    },
+    {
+      "epoch": 5,
+      "train_loss": 1.2405364394187928,
+      "train_accuracy": 0.78125,
+      "val_loss": 1.609912395477295,
+      "val_accuracy": 0.3541666666666667
+    },
+    {
+      "epoch": 6,
+      "train_loss": 1.1137366771697998,
+      "train_accuracy": 0.8015625,
+      "val_loss": 1.1935588518778484,
+      "val_accuracy": 0.7135416666666666
+    },
+    {
+      "epoch": 7,
+      "train_loss": 1.0144937872886657,
+      "train_accuracy": 0.8375,
+      "val_loss": 1.020043154557546,
+      "val_accuracy": 0.7552083333333334
+    },
+    {
+      "epoch": 8,
+      "train_loss": 0.9074915766716003,
+      "train_accuracy": 0.871875,
+      "val_loss": 0.884121318658193,
+      "val_accuracy": 0.8489583333333334
+    },
+    {
+      "epoch": 9,
+      "train_loss": 0.8180817186832428,
+      "train_accuracy": 0.915625,
+      "val_loss": 0.8082164923350016,
+      "val_accuracy": 0.9375
+    },
+    {
+      "epoch": 10,
+      "train_loss": 0.7481801807880402,
+      "train_accuracy": 0.95,
+      "val_loss": 0.7338972290356954,
+      "val_accuracy": 0.9895833333333334
+    },
+    {
+      "epoch": 11,
+      "train_loss": 0.6841119229793549,
+      "train_accuracy": 0.9640625,
+      "val_loss": 0.663214385509491,
+      "val_accuracy": 0.9635416666666666
+    },
+    {
+      "epoch": 12,
+      "train_loss": 0.6187309980392456,
+      "train_accuracy": 0.9921875,
+      "val_loss": 0.671478788057963,
+      "val_accuracy": 0.9322916666666666
+    },
+    {
+      "epoch": 13,
+      "train_loss": 0.5585682809352874,
+      "train_accuracy": 1.0,
+      "val_loss": 0.6003840963045756,
+      "val_accuracy": 0.9635416666666666
+    },
+    {
+      "epoch": 14,
+      "train_loss": 0.5005192130804061,
+      "train_accuracy": 0.996875,
+      "val_loss": 0.5314935247103373,
+      "val_accuracy": 0.9635416666666666
+    },
+    {
+      "epoch": 15,
+      "train_loss": 0.4458068162202835,
+      "train_accuracy": 0.996875,
+      "val_loss": 0.49231746792793274,
+      "val_accuracy": 0.9270833333333334
+    },
+    {
+      "epoch": 16,
+      "train_loss": 0.3935332208871841,
+      "train_accuracy": 1.0,
+      "val_loss": 0.4059548278649648,
+      "val_accuracy": 0.9791666666666666
+    },
+    {
+      "epoch": 17,
+      "train_loss": 0.3527776777744293,
+      "train_accuracy": 1.0,
+      "val_loss": 0.3590683341026306,
+      "val_accuracy": 0.9947916666666666
+    },
+    {
+      "epoch": 18,
+      "train_loss": 0.3210748314857483,
+      "train_accuracy": 0.996875,
+      "val_loss": 0.33700335025787354,
+      "val_accuracy": 0.9791666666666666
+    }
+  ],
+  "final_train_accuracy": 0.996875,
+  "final_train_loss": 0.3210748314857483,
+  "final_val_accuracy": 0.9791666666666666,
+  "final_val_loss": 0.33700335025787354,
+  "best_val_accuracy": 0.9947916666666666,
+  "model_path": "C:\\Users\\alefo\\OneDrive\\Рабочий стол\\беки_дипломка\\Speech1.0\\models\\gradv_ru_kws_baseline.pt",
+  "vocabulary_path": "C:\\Users\\alefo\\OneDrive\\Рабочий стол\\беки_дипломка\\Speech1.0\\models\\gradv_ru_kws_vocab.txt",
+  "verification": {
+    "adapter_prediction": "да",
+    "adapter_target_probability": 0.507141649723053,
+    "gradient_shape": [
+      32000
+    ],
+    "pipeline_run_dir": "C:\\Users\\alefo\\OneDrive\\Рабочий стол\\беки_дипломка\\Speech1.0\\outputs\\baseline_checks\\9cbdafb029e3",
+    "pipeline_final_score": 0.8965393900871277,
+    "pipeline_segments": 5
+  }
+}
