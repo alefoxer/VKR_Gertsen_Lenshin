@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+title: "GRADV: A Reproducible Pipeline for Interpretable Audio Pattern Discovery in Keyword-Spotting Models"
+message: "If you use this software, please cite it as below."
+type: software
+authors:
+  - family-names: "Gertsen"
+    given-names: "Alexander M."
+  - family-names: "Lenshin"
+    given-names: "Alexander M."
+version: "1.0.0"
+date-released: "2026-06-20"
+repository-code: "https://github.com/alefoxer/VKR_Gertsen_Lenshin"
+license: "MIT"
+keywords:
+  - keyword spotting
+  - speech recognition
+  - audio signal processing
+  - explainable AI
+  - saliency analysis
+  - occlusion analysis
+  - PyTorch
+  - Gradio
