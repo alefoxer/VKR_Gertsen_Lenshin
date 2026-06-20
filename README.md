@@ -62,7 +62,81 @@ python scripts\smoke_test.py
 ```powershell
 python scripts\verify_core.py
 ```
+## Reproducible manuscript experiment
 
+
+
+The reproducible experiment used for the manuscript can be run with:
+
+
+
+```bash
+
+python experiments/run_final_vkr_experiment.py
+
+```
+
+
+
+The script generates a complete experimental output package, including:
+
+
+
+- single-run results;
+
+- study-mode outputs;
+
+- model-comparison summaries;
+
+- WAV, CSV, JSON, and Markdown artifacts;
+
+- `final_experiment_summary.json`;
+
+- `final_experiment_report.md`.
+
+
+
+The generated outputs are saved under:
+
+
+
+```text
+
+outputs/final_vkr_experiment/<experiment_id>/
+
+```
+
+
+
+## Citation
+
+
+
+If you use GRADV in academic work, please cite the archived software release. The DOI will be added after the Zenodo release.
+
+
+
+```text
+
+Gertsen, A. M., & Lenshin, A. M. (2026). GRADV: A Reproducible Pipeline for Interpretable Audio Pattern Discovery in Keyword-Spotting Models (v1.0.0). Zenodo. DOI: [to be added]
+
+```
+
+
+
+## License
+
+
+
+This project is distributed under the MIT License. See the `LICENSE` file for details.
+
+
+
+## Manuscript scope
+
+
+
+The current release is intended for reproducible research on interpretable audio pattern discovery in keyword-spotting models. The included `gradv_ru_kws_baseline` model is a compact demonstration model. The results should be interpreted as the behavior of a specific model and selected experimental parameters, not as a universal description of Russian speech or all speech-recognition systems.
 ## Baseline-модель
 
 В проект входит компактная baseline-модель:
