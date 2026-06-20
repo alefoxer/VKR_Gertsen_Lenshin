@@ -7,8 +7,9 @@ authors:
     given-names: "Alexander M."
   - family-names: "Lenshin"
     given-names: "Alexander M."
-version: "1.0.0"
+version: "1.0.1"
 date-released: "2026-06-20"
+doi: "10.5281/zenodo.20768314"
 repository-code: "https://github.com/alefoxer/VKR_Gertsen_Lenshin"
 license: "MIT"
 keywords:

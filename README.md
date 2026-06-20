@@ -1,3 +1,4 @@
+[![DOI](https://zenodo.org/badge/1236887283.svg)](https://doi.org/10.5281/zenodo.20768313)
 # GRADV
 
 GRADV - локальное приложение для анализа аудиосигналов в задаче распознавания коротких русских команд. Программа формирует входной аудиообраз выбранного класса, показывает изменение score, вероятности классов, графики сигнала и таблицы значимых временных участков.
@@ -118,7 +119,7 @@ If you use GRADV in academic work, please cite the archived software release. Th
 
 ```text
 
-Gertsen, A. M., & Lenshin, A. M. (2026). GRADV: A Reproducible Pipeline for Interpretable Audio Pattern Discovery in Keyword-Spotting Models (v1.0.0). Zenodo. DOI: [to be added]
+Gertsen, A. M., & Lenshin, A. M. (2026). GRADV: A Reproducible Pipeline for Interpretable Audio Pattern Discovery in Keyword-Spotting Models (v1.0.1). Zenodo. DOI: 10.5281/zenodo.20768314
 
 ```
 
