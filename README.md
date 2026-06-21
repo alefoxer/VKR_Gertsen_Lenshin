@@ -107,6 +107,24 @@ outputs/final_vkr_experiment/<experiment_id>/
 
 ```
 
+## Manuscript extended experiment
+
+The extended manuscript experiment evaluates target-class audio pattern discovery across all available vocabulary targets, repeated seeds and the `maximize_from_noise` / `maximize_from_silence` input modes. It exports machine-readable CSV/JSON summaries, segment-ranking ablation, weight-sensitivity analysis, optional model-comparison outputs and manuscript-ready figures.
+
+Quick verification command:
+
+```bash
+python experiments/run_manuscript_extended_experiment.py --targets да нет --steps 8 --repeats 1 --quick
+```
+
+Full manuscript command:
+
+```bash
+python experiments/run_manuscript_extended_experiment.py --steps 50 --repeats 5 --input-modes maximize_from_noise maximize_from_silence --seed-start 8000
+```
+
+Generated outputs are saved under `outputs/manuscript_extended_experiment/`. See [docs/MANUSCRIPT_EXTENDED_EXPERIMENT.md](docs/MANUSCRIPT_EXTENDED_EXPERIMENT.md) for the complete reviewer-oriented protocol and file descriptions.
+
 
 
 ## Citation

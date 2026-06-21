@@ -8,4 +8,12 @@ The generated experimental outputs are not stored in the repository by default b
 python experiments/run_final_vkr_experiment.py
 ```
 
-Any additional local audio files used for testing are not publicly released because they may contain personal or non-public speech data.
+The extended manuscript experiment outputs are also not stored in the repository by default. They can be reproduced by running:
+
+```bash
+python experiments/run_manuscript_extended_experiment.py --steps 50 --repeats 5 --input-modes maximize_from_noise maximize_from_silence --seed-start 8000
+```
+
+For the manuscript, the generated directory under `outputs/manuscript_extended_experiment/<experiment_id>/` may be supplied as supplementary material or archived separately with the release.
+
+Any additional local or private audio files used for testing are not publicly released if they may contain personal or non-public speech data.
